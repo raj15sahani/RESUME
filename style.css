@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+
+html
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-family: Inter , sans-serif;
+    background-color: black;
+    color: white;
+
+}
+/* common style */
+img
+{
+    width: 200px;
+    height:200px
+}
+.description
+{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title
+{
+   color: var(--primary-color);
+   font-weight: 700;
+   font-size: 2rem;
+   text-transform: uppercase; 
+}
+.item_pretitle
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.item_title
+{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.subtitle
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.item_cgpa
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* layouts */
+.container
+{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr; 
+    gap: 4rem;
+}
+
+.profile
+{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group-1 , .group-2
+{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.group-3
+{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem; 
+}
+.group-3>div{
+    flex: 1;
+}
+
+
+
+/* profile */
+.profile_container
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_name
+{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: block;  
+}
+ 
+.profile_title
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.skill_list
+{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height:2;
+
+}
+
+/* education */
+.edu_items
+{
+    margin-top: 2rem;
+}
+/* certification */
+.cer_item
+{
+    margin-top: 2rem;
+}
+
+/* project */
+pro_item
+{
+    margin-top: 2rem;
+}
+
+/* intrest */
+interest_items
+{
+    margin-top: 2rem ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+interest_item
+{
+    font-size: 1.5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+/* socials */
+
+.social_items
+{
+    margin-top: 2rem;
+}
+.social_item
+{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+
+.social_item:hover
+{
+    color: var(--primary-color);
+}
+
+hr{
+    grid-column: 1 / -1;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
